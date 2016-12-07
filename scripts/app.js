@@ -22,7 +22,7 @@ window.onload = function () {
 	volumeUpButton.onclick = volumeUp;
 	volumeDownButton.onclick = volumeDown;
 	
-	ticker.onloadeddata = function () {
+	ticker.oncanplay = function () {
 		toggleButton.disabled = false;
 	}
 	ticker.src = TICK_SOUND_URL;
