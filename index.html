@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html manifest="manifest.appcache">
+	<head>
+		<title>TickZ</title>
+		
+		<!-- Force HTTPS. -->
+		<link rel="canonical" href="https://tickz.zmyaro.com" />
+		<script type="text/javascript">
+			var CANONICAL_HOST = "tickz.zmyaro.com";
+			if (CANONICAL_HOST === window.location.host && window.location.protocol !== 'https:') {
+				window.location.protocol = 'https';
+			}
+		</script>
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<link rel="manifest" href="manifest.webmanifest" />
+		
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<meta name="msapplication-tooltip" content="A mysterious ticking noise" />
+		
+		<link rel="author" href="https://plus.google.com/+ZacharyYaro" />
+		
+		<link rel="stylesheet" type="text/css" href="styles/fonts/icons.css" />
+		<link rel="stylesheet" type="text/css" href="styles/fonts/roboto.css" />
+		<link rel="stylesheet" type="text/css" href="styles/materialz/material-elements.css" />
+		<link rel="stylesheet" type="text/css" href="styles/materialz/material-depth.css" />
+		<link rel="stylesheet" type="text/css" href="styles/materialz/material-widgets.css" />
+		
+		<link rel="stylesheet" type="text/css" href="styles/app.css" />
+		
+		<script type="text/javascript" src="scripts/material-touch.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	</head>
+	<body>
+		<header class="appBar z1" role="toolbar">
+			TickZ
+		</header>
+		<button id="toggleButton" class="z1" disabled="disabled"><span class="icon" role="img">play_arrow</span></button>
+		<br /><br />
+		<footer role="toolbar">
+			<button id="volumeDownButton"><span class="icon" role="img">volume_down</span></button>
+			<input type="range" min="0" max="1" step="0.1" value="1" id="volumeSlider" />
+			<button id="volumeUpButton"><span class="icon" role="img">volume_up</span></button>
+		</footer>
+		<audio id="ticker">TickZ only works in browsers that support HTML audio.</audio>
+	</body>
+</html>

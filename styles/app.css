@@ -1,0 +1,33 @@
+#toggleButton {
+	font-size: 128px;
+	border-radius: 128px;
+	padding: 10px 8px;
+	
+	display: block;
+	margin: 0.5em auto;
+	
+	overflow: hidden;
+}
+	#toggleButton .icon {
+		font-size: 128px;
+		margin: -4px 16px;
+		position: relative;
+		top: 18px;
+	}
+
+footer {
+	text-align: center;
+	margin: -24px;
+}
+#volumeSlider {
+	position: relative;
+	top: -6px;
+	width: 60%;
+	width: calc(90% - 96px);
+	max-width: 400px;
+}
+
+[role="toolbar"] .icon {
+	position: relative;
+	top: 5px;
+}

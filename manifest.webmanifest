@@ -1,0 +1,8 @@
+{
+	"short_name": "TickZ",
+	"name": "TickZ",
+	"description": "A mysterious ticking noise",
+	
+	"start_url": "/",
+	"display": "standalone"
+}
