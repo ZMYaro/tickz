@@ -24,7 +24,7 @@
 	}
 	
 	/**
-	 * Add the ï¿½activeï¿½ class to the touched element
+	 * Add the “active” class to the touched element
 	 * @param {TouchEvent} e
 	 */
 	function makeActive(e) {
@@ -39,7 +39,7 @@
 	}
 	
 	/**
-	 * Remove the ï¿½activeï¿½ class from the touched element
+	 * Remove the “active” class from the touched element
 	 * @param {TouchEvent} e
 	 */
 	function makeInactive(e) {
